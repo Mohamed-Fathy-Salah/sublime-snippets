@@ -1,0 +1,17 @@
+<snippet>
+	<description>sieve</description>
+	<content><![CDATA[bitset<N> b;
+vector<int> p;
+void sieve(){
+	b.set();
+	b[0]=b[1]=0;
+	for(int i=4;i<N;i+=2)b[i]=0;
+	p.push_back(2);
+	for(int i=3;i<N;i+=2)if(b[i]){
+		p.push_back(i);
+		for(ll j=1ll*i*i;j<N;j+=(i<<1))b[j]=0;
+	}
+}]]></content>
+	<tabTrigger>sieve</tabTrigger>
+	<scope>source.c, source.objc, source.c++, source.objc++</scope>
+</snippet>

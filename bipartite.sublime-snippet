@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[vector<vector<int>> v;
+vector<int>color;
+bool dfs(int i,int c){
+    if(color[i])return color[i] == c;
+    color[i] = c;
+    c = -c;
+    for (auto &j: v[i])if(!dfs(j,c))return 0;
+    return 1;
+}]]></content>    
+    <tabTrigger>bipartite</tabTrigger>
+    <scope>source.c, source.objc, source.c++, source.objc++</scope>
+</snippet>

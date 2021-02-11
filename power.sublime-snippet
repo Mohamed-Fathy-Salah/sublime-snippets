@@ -1,0 +1,14 @@
+<snippet>
+	<description>fast power</description>
+	<content><![CDATA[ll power(ll b, ll p, ll mod) {
+	ll ret = 1;
+	while (p) {
+		if (p & 1)ret = ret * b % mod;
+		b = b * b % mod;
+		p >>= 1;
+	}
+	return ret;
+}]]></content>
+	<tabTrigger>power</tabTrigger>
+	<scope>source.c, source.objc, source.c++, source.objc++</scope>
+</snippet>

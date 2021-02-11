@@ -1,0 +1,11 @@
+<snippet>
+	<description>divisors</description>
+	<content><![CDATA[vector<int> divs;
+void divisors(int n){
+	int i=1;
+	for(;1ll*i*i<n;i++)if(n%i==0)divs.push_back({i,n/i});
+	if(n%i==0)divs.push_back(i);
+}]]></content>
+	<tabTrigger>divs</tabTrigger>
+	<scope>source.c, source.objc, source.c++, source.objc++</scope>
+</snippet>
