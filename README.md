@@ -9,10 +9,8 @@ PackageResourceViewer
 ```
 #### C++
 ```
-Clang Format
 CppFastOlympicCoding (vvi,pii and so on)
 EasyClangComplete ( you have to install clang on ur machine)
-SublimeAStyleFormatter (`ctrl` + `alt` + `f` will format and indent ur code)
 SublimeGDB ( `ctrl`+`f5` for debugging )
 ```
 ## enable vintage mode (vi mod)
@@ -41,6 +39,7 @@ to set other keys for `Esc`
 	]
 },
 ```
+to auto indent the whole file type in command mode `gg=G`
 	
 ## compile and run
 press `ctrl` + `p` -> `PackageResourceViewer: OpenResource` -> `c++` -> `c++ Single File.sublime-bulid`
