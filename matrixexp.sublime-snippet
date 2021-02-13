@@ -5,10 +5,10 @@ typedef vector<ll> vl;
 typedef vector<vl> vvl;
 const int mod= 1e9+7;
 vvl mul(const vvl &a,const vvl &b) {
-    vvl c(a.size(), vl(a.size()));
-    for (int k = 0; k < c.size(); ++k)
-        for (int i = 0; i < c.size(); ++i)
-            for (int j = 0; j < c.size(); ++j) 
+    vvl c(a.size(), vl(b[0].size()));
+    for (int i = 0; i < a.size(); ++i)
+        for (int j = 0; j < b[0].size(); ++j)
+            for (int k = 0; k < a[0].size(); ++k)
                 c[i][j] += a[i][k] * b[k][j]%mod,
                 c[i][j] %=mod;
     return c;
