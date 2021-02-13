@@ -5,16 +5,12 @@
 	],
 	"installed_packages":
 	[
-		"Clang Format",
 		"CppFastOlympicCoding",
 		"EasyClangComplete",
-		"Jedi - Python autocompletion",
 		"Origami",
 		"Package Control",
 		"PackageResourceViewer",
 		"PPCL Language Syntax and Editor",
-		"Subclim",
-		"SublimeAStyleFormatter",
 		"SublimeGDB"
 	]
 }
